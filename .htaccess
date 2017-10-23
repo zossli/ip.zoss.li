@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT}   !^443$
+RewriteRule  (.*)  https://%{HTTP_HOST}/$1   [L]
+
+<IfModule mod_headers.c>
+      Header always set Strict-Transport-Security "max-age=15768000; preload"
+</IfModule>
