@@ -51,8 +51,8 @@ function getInfo($array){
 
 }
 
-    echo("<table><tr><td>Current IP:</td><td style='font-weight:bold'>".$_SERVER["REMOTE_ADDR"]."</td></tr>");
-	echo("<tr><td>used LAN IP:</td><td style='font-weight:bold'><span id=\"list\"></span></td></tr></table><br />");
+    echo("Current IP:".$_SERVER["REMOTE_ADDR"]);
+	echo("used LAN IP:<span id=\"list\"></span><br />");
 
 	$ip = $_SERVER['REMOTE_ADDR'];
 	$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
