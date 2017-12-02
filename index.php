@@ -51,7 +51,7 @@ function getInfo($array){
 
 }
 
-    echo("Current IP:".$_SERVER["REMOTE_ADDR"]."<br />);
+    echo("Current IP:".$_SERVER["REMOTE_ADDR"]."<br />");
 	echo("used LAN IP:<span id=\"list\"></span><br /><br />");
 
 	$ip = $_SERVER['REMOTE_ADDR'];
