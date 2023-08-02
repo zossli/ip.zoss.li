@@ -11,6 +11,7 @@
 
 echo $_SERVER['REMOTE_ADDR'];
 
+?>
 </BODY>
 
 </HTML>
